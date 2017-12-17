@@ -11,7 +11,7 @@ import java.util.Comparator;
  * 返回："bab"
  * 思路：如果s1+s2 < s2+s1,则s1放前面，否则s2放前面。
  * 注意：需要重写比较函数。
- * @author yanhaolu
+ * @author dyh
  *
  */
 

@@ -4,7 +4,7 @@ package com.dyh.string;
  * 给定一个字符串A及它的长度n，请返回它的最长无重复字符子串长度。保证A中字符全部为小写英文字符，且长度小于等于500。
  * 例："aabcb",5
  * 返回：3
- * @author yanhaolu
+ * @author dyh
  *
  */
 

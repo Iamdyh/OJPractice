@@ -5,7 +5,7 @@ package com.dyh.string;
  * 例："dog loves pig", 13
  * 返回："pig loves dog"
  * 思路：先对句子整体交换，然后再对每个单词交换。
- * @author yanhaolu
+ * @author dyh
  *
  */
 public class Reverse {

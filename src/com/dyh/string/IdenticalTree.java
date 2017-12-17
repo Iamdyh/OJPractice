@@ -6,7 +6,7 @@ package com.dyh.string;
  * 给定两棵二叉树的头结点A和B，请返回一个bool值，代表A中是否存在一棵同构于B的子树。
  * 思路：1、将二叉树序列化，变成字符串；
  *      2、利用kmp算法，查看A中是否包含B。
- * @author yanhaolu
+ * @author dyh
  *
  */
 

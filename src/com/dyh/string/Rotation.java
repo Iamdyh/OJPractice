@@ -7,7 +7,7 @@ package com.dyh.string;
  * 返回： true
  * 思路：1、先判断两个字符串长度是否相等，不等在返回false；
  * 		2、将字符串A和B相加生成一个新的字符串string_new，然后利用kmp算法，查看string_new中是否包含B，包含就返回true，否则就返回false。
- * @author yanhaolu
+ * @author dyh
  *
  */
 

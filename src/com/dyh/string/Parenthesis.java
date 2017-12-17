@@ -9,7 +9,7 @@ package com.dyh.string;
  *      3、遇到')', 则count--;
  *      4、如果 count<0, 则返回false;
  *      5、遍历完string后，如果count == 0，返回true，否则返回false。
- * @author yanhaolu
+ * @author dyh
  *
  */
 

@@ -7,7 +7,7 @@ package com.dyh.string;
  * 思路：1、先将0到len间的字符进行逆序调整；
  *      2、再将len到n间的字符进行逆序调整；
  *      3、最后对整体进行逆序调整。
- * @author yanhaolu
+ * @author dyh
  *
  */
 public class Translation {

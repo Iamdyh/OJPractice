@@ -6,7 +6,7 @@ package com.dyh.string;
  * 例："Mr John Smith”,13
  * 返回："Mr%20John%20Smith"
  * 思路：新建一个StringBuilder对象sb，遍历原来的string，如果遇到空格sb后就添加%20,否则就添加string。
- * @author yanhaolu
+ * @author dyh
  *
  */
 

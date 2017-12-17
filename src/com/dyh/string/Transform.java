@@ -6,7 +6,7 @@ package com.dyh.string;
  * 例："abc",3, "bca",3
  * 返回：true
  * 思路：利用哈希表做字符统计
- * @author yanhaolu
+ * @author dyh
  *
  */
 
