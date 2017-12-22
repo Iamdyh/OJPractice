@@ -35,7 +35,10 @@ import java.util.Arrays;
 
 
 public class QuickSort {
-	
+	/**
+	 * 
+	 * @param arr
+	 */
 	public static void quicSort(int[] arr){
 		if(arr == null || arr.length < 2)
 			return;

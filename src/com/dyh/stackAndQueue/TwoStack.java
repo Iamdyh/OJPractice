@@ -15,7 +15,12 @@ import java.util.Stack;
  */
 
 public class TwoStack {
-	
+	/**
+	 * 
+	 * @param ope
+	 * @param n
+	 * @return
+	 */
 	public static int[] twoStack(int[] ope, int n) {
         // write code here
 		

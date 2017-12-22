@@ -11,6 +11,11 @@ import java.util.Arrays;
 */
 
 public class SelectionSort {
+	/**
+	 * 
+	 * @param A
+	 * @return
+	 */
 	public static int[] selectionSort(int[] A){
 		 int min = 0;
 	        int t = 0;

@@ -12,7 +12,11 @@ import java.util.Scanner;
  * 
  */
 public class InsertSort {
-
+	/**
+	 * 
+	 * @param arr
+	 * @return
+	 */
 	public static int[] insertSort(int[] arr){
 		int index = 0;
 		for(int i = 1; i < arr.length; i++){

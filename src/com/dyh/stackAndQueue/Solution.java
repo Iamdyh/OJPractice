@@ -19,6 +19,8 @@ package com.dyh.stackAndQueue;
 import java.util.Stack;
 
 public class Solution {
+	
+	
 	private  Stack<Integer> stackData = new Stack<>();
 	private  Stack<Integer> stackMin = new Stack<>();
 	/**
@@ -44,7 +46,7 @@ public class Solution {
         		stackMin.push(stackMin.peek());
         }
     }
-    
+   
     public void pop() {
     		if(stackData.empty()) {
     			throw new RuntimeException("Your stack is empty!");
@@ -53,7 +55,10 @@ public class Solution {
     		}
         stackData.pop();
     }
-    
+    /**
+     * 
+     * @return
+     */
     public int top() {
         return stackData.peek();
     }

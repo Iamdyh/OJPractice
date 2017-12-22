@@ -12,6 +12,13 @@ import java.util.Arrays;
 
 
 public class HeapSort {
+	
+	/**
+	 * 
+	 * @param A
+	 * @param n
+	 * @return
+	 */
 	public static int[] heapSort(int[] A, int n){
 		for(int i = n/2; i >= 0; i--){
 			heapAdjust(A, i, n);

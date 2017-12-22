@@ -12,6 +12,12 @@ import java.util.Arrays;
  */
 
 public class RadixSort {
+	/**
+	 * 
+	 * @param A
+	 * @param n
+	 * @return
+	 */
 	public static int[] radixSort(int[] A, int n){
 		 if(A==null||n<2) 
 			 return null;

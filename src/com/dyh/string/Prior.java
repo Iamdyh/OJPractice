@@ -16,7 +16,12 @@ import java.util.Comparator;
  */
 
 public class Prior {
-	
+	/**
+	 * 
+	 * @param strs
+	 * @param n
+	 * @return
+	 */
 	
 	public static String findSmallest(String[] strs, int n) {
         // write code here

@@ -11,6 +11,11 @@ import java.util.Arrays;
  */
 
 public class MergeSort {
+	
+	/**
+	 * 
+	 * @param arr
+	 */
 	public static void mergeSort(int[] arr){
 		if(arr == null || arr.length < 2){
 			return;

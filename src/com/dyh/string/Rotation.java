@@ -12,6 +12,14 @@ package com.dyh.string;
  */
 
 public class Rotation {
+	/**
+	 * 
+	 * @param A
+	 * @param lena
+	 * @param B
+	 * @param lenb
+	 * @return
+	 */
 	public static boolean chkRotation(String A, int lena, String B, int lenb) {
 	        // write code here
 		if(lena != lenb)

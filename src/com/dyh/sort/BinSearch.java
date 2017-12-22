@@ -1,5 +1,11 @@
 package com.dyh.sort;
 
+/**
+ * 二分查找
+ * @author dyh
+ *
+ */
+
 public class BinSearch {
 
 	public static int binSearch(int[] arr, int k){

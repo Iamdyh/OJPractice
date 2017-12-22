@@ -11,6 +11,14 @@ package com.dyh.string;
  */
 
 public class Transform {
+	/**
+	 * 
+	 * @param A
+	 * @param lena
+	 * @param B
+	 * @param lenb
+	 * @return
+	 */
 	public static boolean chkTransform(String A, int lena, String B, int lenb) {
 	        // write code here
 		if(lena != lenb)

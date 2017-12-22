@@ -13,7 +13,10 @@ import java.util.Arrays;
 
 public class ShellSort {
 
-	
+	/**
+	 * 
+	 * @param a
+	 */
 	
 	public static void shellsort(int[] a){
 		/*int j = 0;

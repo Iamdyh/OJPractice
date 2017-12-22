@@ -11,6 +11,12 @@ import java.util.Scanner;
  */
 public class LongestCommonSub {
 
+	/**
+	 * 
+	 * @param a
+	 * @param b
+	 * @return
+	 */
 	public static int longestCommonSub(String a, String b){
 		int res = 0;
 		int[][] dp = new int[a.length()+1][b.length()+1];

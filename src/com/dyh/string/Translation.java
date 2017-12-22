@@ -11,6 +11,13 @@ package com.dyh.string;
  *
  */
 public class Translation {
+	/**
+	 * 
+	 * @param A
+	 * @param n
+	 * @param len
+	 * @return
+	 */
 	public static String stringTranslation(String A, int n, int len) {
         // write code here
 		if(A == null || n == 0 || len == 0)

@@ -11,7 +11,12 @@ package com.dyh.string;
  */
 
 public class Replacement {
-	
+	/**
+	 * 
+	 * @param iniString
+	 * @param length
+	 * @return
+	 */
 	public static String replaceSpace(String iniString, int length) {
         // write code here
 		

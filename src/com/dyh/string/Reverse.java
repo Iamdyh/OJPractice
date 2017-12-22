@@ -9,6 +9,12 @@ package com.dyh.string;
  *
  */
 public class Reverse {
+	/**
+	 * 
+	 * @param A
+	 * @param n
+	 * @return
+	 */
 	public static String reverseSentence(String A, int n) {
 		if(A == null || n < 1)
 			return A;

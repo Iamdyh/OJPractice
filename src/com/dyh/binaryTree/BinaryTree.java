@@ -23,6 +23,12 @@ public class BinaryTree {
  	public BinaryTree(){
  		
  	}
+ 	/**
+ 	 * 
+ 	 * @param val
+ 	 * @param left
+ 	 * @param right
+ 	 */
  	public BinaryTree(int val, BinaryTree left, BinaryTree right){
  		this.val = val;
  		this.left = left;

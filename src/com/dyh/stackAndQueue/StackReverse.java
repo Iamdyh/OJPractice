@@ -14,6 +14,12 @@ import java.util.Stack;
 
 public class StackReverse {
 	
+	/**
+	 * 
+	 * @param A
+	 * @param n
+	 * @return
+	 */
 	public static int[] reverseStack(int[] A, int n) {
 	        // write code here
 		if(n == 0)

@@ -1,4 +1,9 @@
 package com.dyh.string;
+/**
+ * KMP算法
+ * @author dyh
+ *
+ */
 
 public class KMP {
 	

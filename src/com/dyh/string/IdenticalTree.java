@@ -11,6 +11,7 @@ package com.dyh.string;
  */
 
 public class IdenticalTree {
+	
 	public static class TreeNode{
 		int val = 0;
 		TreeNode left = null;
@@ -20,6 +21,12 @@ public class IdenticalTree {
 		}
  	}
 	
+	/**
+	 * 
+	 * @param A
+	 * @param B
+	 * @return
+	 */
 	public static boolean chkIdentical(TreeNode A, TreeNode B) {
 		String str1 = serialByPre(A);
 		String str2 = serialByPre(B);

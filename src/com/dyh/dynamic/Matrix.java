@@ -8,6 +8,12 @@ package com.dyh.dynamic;
  */
 public class Matrix {
 	
+	/**
+	 * 
+	 * @param p
+	 * @param m
+	 * @param s
+	 */
 	//计算最优值
 	public static void matrixChain(int[] p, int[][] m, int[][] s){
 		int n = p.length - 1;

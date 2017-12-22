@@ -10,6 +10,12 @@ package com.dyh.string;
 
 public class DistinctSubstring {
 	
+	/**
+	 * 
+	 * @param A
+	 * @param n
+	 * @return
+	 */
 	public static int longestSubstring(String A, int n) {
         // write code here
 		//哈希表map:用来统计每种字符之前出现的位置，重复的字符的位置就在map中更新。
