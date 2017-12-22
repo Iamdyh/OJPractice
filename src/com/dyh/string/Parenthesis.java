@@ -14,7 +14,12 @@ package com.dyh.string;
  */
 
 public class Parenthesis {
-	
+	/**
+	 * 
+	 * @param A
+	 * @param n
+	 * @return
+	 */
 	public static boolean chkParenthesis(String A, int n) {
         // write code here
 		int count = 0;

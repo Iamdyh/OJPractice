@@ -9,7 +9,12 @@ import java.util.Arrays;
  */
 
 public class CountingSort {
-
+	/**
+	 * 
+	 * @param A
+	 * @param n
+	 * @return
+	 */
 	public static int[] countingSort(int[] A, int n){
 		int min = A[0];
 		int max = A[0];
