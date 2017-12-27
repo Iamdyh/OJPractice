@@ -15,15 +15,7 @@ import java.awt.List;
  */
 
 public class InsertValue {
-	class ListNode{
-		int val;
-		ListNode next = null;
-		public ListNode(int val) {
-			// TODO Auto-generated constructor stub]
-			this.val = val;
-		}
-	}
-
+	
 	public ListNode insert(int[] A, int[] nxt, int val) {
         // write code here
 		if(A == null || A.length == 0) {
@@ -89,12 +81,14 @@ public class InsertValue {
         //插入值
         ListNode preNode = head;
         ListNode nextNode = preNode.next;
+        //当val小于等于链表中最小值时
         if(head.val>=val){
             ListNode curNode = new ListNode(val);
             curNode.next = head;
             //tail.next = curNode;
             return curNode;
         }
+        //遍历循环链表，直到找到循环链表中比val小的节点
         while(nextNode!=null&&val>nextNode.val){
             preNode = nextNode;
             nextNode = preNode.next;
@@ -112,9 +106,7 @@ public class InsertValue {
 		int val = 4;
 		InsertValue insertValue = new InsertValue();
 		ListNode head = insertValue.insert2(A, nxt, val);
-		for(int i = 0; i < A.length+1; i++, head = head.next) {
-			System.out.print(head.val + " ");
-		}
+		ListNode.printList(head);
 	}
 
 }
