@@ -35,7 +35,7 @@ public class Solution {
         RandomListNode pNewNext = null;
         //给复制的那些节点的random赋值
         while(pTemp != null) {
-        	pNewNext = pTemp.next.next;
+        		pNewNext = pTemp.next.next;
             pNewNode = pTemp.next;
             pNewNode.random = pTemp.random != null ? pTemp.random.next : null;
             pTemp = pNewNext;
