@@ -5,6 +5,9 @@ package com.dyh.linkList;
  * 给定两个链表的头结点head1和head2(注意，另外两个参数adjust0和adjust1用于调整数据,与本题求解无关)。请返回一个bool值代表它们是否相交。
  * 例：hea1->p1->p2->p3->p4->p2, head2->p5->p2->p3->p4->p2;
  * 返回：p2
+ * 思路：先找到两个链表的入环节点，如果两入环节点相等，那么再查看入环节点之前有没有相交节点（通过判断无环单链表是否相交的方法），
+ * 如果入环节点之前没有相交节点，那么返回入环节点；如果入环节点不相等，那么存在两种情况：情况一：两个链表不相交，返回null，
+ * 情况二：两个链表共用一个环， 返回任意一个入环节点即可。
  * @author dyh
  *
  */
@@ -35,6 +38,7 @@ public class ChkIntersection {
 			}else {
 				//如果入环节点不相等，则有两种情况:
 				//遍历链表,不能遍历循环链表，运行时间太长
+				//情况一：两个链表公用一个环，返回任意一个入环节点都行
 				ListNode cur = pFirstLoopNode_1.next;
 				while(cur != pFirstLoopNode_1) {
 					if(cur == pFirstLoopNode_2) {
@@ -42,13 +46,8 @@ public class ChkIntersection {
 					}
 					cur = cur.next;
 				}
-				if(pFirstLoopNode_1 == pFirstLoopNode_2) {
-					//情况一：两个链表公用一个环，返回任意一个入环节点都行
-					res = pFirstLoopNode_1;
-				}else {
-					//情况二：两个链表不相交，返回null;
-					res = null;
-				}
+				//情况二：两个链表不相交，返回null;
+				res = null;
 			}
 		}
 		return res;
@@ -144,17 +143,17 @@ public class ChkIntersection {
 			pFast = pFast.next.next;
 			pSlow = pSlow.next;
 		}
-	    if(pFast != null || pFast.next != null) {
-	    		pFast = head;
-			while(pFast != pSlow) {
-				pFast = pFast.next;
-				pSlow = pSlow.next;
-			}
-			return pFast;
-	    }else {
+	   //如果pFast为空，说明没有不是循环链表
+	    if(pFast == null || pFast.next == null) {
 	    		return null;
 	    }
-		
+	    //给pFast重新赋值，遍历链表，当pFast和pSlow再次相遇时，此节点为入环的第一个节点
+	    	pFast = head;
+		while(pFast != pSlow) {
+			pFast = pFast.next;
+			pSlow = pSlow.next;
+		}
+		return pFast;
 	}
 	
 	public static void main(String[] args) {
