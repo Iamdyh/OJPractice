@@ -1,4 +1,4 @@
-package com.dyh.sort;
+package com.dyh.binarySearch;
 
 /**
  * 二分查找
