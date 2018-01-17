@@ -58,8 +58,8 @@ public class MinValue {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr = {2,2,2,2,2,2,2,1,2};
-		System.out.println(getMin(arr, 9));
+		int[] arr = {4,1,2,3,3};
+		System.out.println(getMin(arr, 5));
 	}
 
 }
