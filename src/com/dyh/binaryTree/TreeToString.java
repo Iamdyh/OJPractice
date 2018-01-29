@@ -12,6 +12,23 @@ package com.dyh.binaryTree;
 
 public class TreeToString {
 
-	
+	 public String toString(TreeNode root) {
+	        // write code here
+		 if(root == null)
+			 return null;
+		 StringBuilder sb = new StringBuilder();
+		 preOrder(root, sb);
+		 return sb.toString();
+ 	 }
+	 
+	 public void preOrder(TreeNode node, StringBuilder sb) {
+		 if(node == null) {
+			 sb.append("#!");
+			 return;
+		 }
+		 sb.append(node.val).append("!");
+		 preOrder(node.left, sb);
+		 preOrder(node.right, sb);
+	 }
 
 }
