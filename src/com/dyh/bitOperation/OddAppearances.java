@@ -20,9 +20,11 @@ public class OddAppearances {
 		for(int i = 0; i < n; i++) {
 			e0 ^= arr[i];
 		}
+		//此时e0 等于两个奇数异或的值
 		int rightOne = e0 & (~e0 + 1);
 		for(int i = 0; i < n; i++) {
 			if((arr[i] & rightOne) != 0) {
+				//只与arr中第k位为1的那些整数进行异或
 				e0hasOne ^= arr[i];
 			}
 		}
