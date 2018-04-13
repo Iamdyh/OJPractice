@@ -44,8 +44,8 @@ public class Translation {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str = "ABCDE";
-		System.out.println(stringTranslation(str, 5, 3));
+		String str = "abcXYZdef";
+		System.out.println(stringTranslation(str, 9, 3));
 
 	}
 
