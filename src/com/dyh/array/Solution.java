@@ -41,6 +41,7 @@ public class Solution {
 		int[] num2 = new int[2];
 		FindNumsAppearOnce(array, num1, num2);
 		System.out.println(num1[0] +" " + num2[0]);
+	
 	}
 
 }
