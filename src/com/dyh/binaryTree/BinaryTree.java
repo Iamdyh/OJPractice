@@ -108,7 +108,7 @@ public class BinaryTree {
  	}
  	
  	/**
- 	 * 中序遍历递归算法
+ 	 * 中序遍历非递归算法
  	 * @param root
  	 */
  	public static void inOrder2(BinaryTree root){
