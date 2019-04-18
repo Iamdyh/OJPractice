@@ -53,10 +53,27 @@ public class NRepeatedElementInSize2NArray {
 		}
 		return -1;
 	}
+	
+	//改
+	public static int repeatedNTimes4(int[] A){
+		if(A[0] == A[A.length - 1]){
+			return A[0];
+		}
+		//一次循环做两次比较
+		for(int i = 0; i < A.length - 1; i++){
+			if(i < A.length - 2 && A[i] == A[i + 2]){
+				return A[i];
+			}
+			if(A[i] == A[i + 1]){
+				return A[i];
+			}
+		}
+		return -1;
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] A = {1, 2, 3, 3};
-		System.out.println(repeatedNTimes3(A));
+		System.out.println(repeatedNTimes4(A));
 	}
 
 }
