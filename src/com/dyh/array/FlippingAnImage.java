@@ -37,7 +37,7 @@ public class FlippingAnImage {
 		B = flipAndInvertImage(A);
 		for(int i = 0; i < A.length; i++) {
 			for(int j = 0; j < A[0].length; j++) {
-				System.out.println(B[i][j]);
+				System.out.println();
 			}
 		}
 	}
