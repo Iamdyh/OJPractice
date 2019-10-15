@@ -44,12 +44,34 @@ public class FindWordsThatCanBeFormedbyCharacters {
 		}
 		return true;
 	}
+	
+	public static int countCharacters2(String[] words, String chars) {
+		int count = 0;
+		for(String word: words) {
+			List<Character> list = new ArrayList<>();
+			for(int i = 0; i < chars.length(); i++) {
+				list.add(chars.charAt(i));
+			}
+			for(int i = 0; i < word.length(); i++) {
+				if(list.contains(word.charAt(i))){
+					list.remove((Character) word.charAt(i));
+				}else {
+					break;
+				}
+				if(i == word.length() - 1) {
+					count += word.length();
+				}
+			}
+			
+		}
+		return count;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String[] words = {"cat","bt","hat","tree"};
 		String chars = "atach";
-		System.out.println(countCharacters(words, chars));
+		System.out.println(countCharacters2(words, chars));
 	}
 
 }
