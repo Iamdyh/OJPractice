@@ -25,6 +25,7 @@ class Node {
 
 public class MaximumDepthOfNaryTree {
 	
+	//采用递归，N叉树的最大深度等于它的最大子树深度+1，递归遍历其所有子树，取深度最大的结果+1即为结果。
 	public int maxDepth(Node root) {
 		if(root == null) {
 			return 0;
@@ -38,31 +39,6 @@ public class MaximumDepthOfNaryTree {
         return dep + 1;
     }
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Node root = new Node();
-		root.val = 1;
-		Node node1 = new Node();
-		node1.val = 2;
-		Node node2 = new Node();
-		node2.val = 3;
-		Node node3 = new Node();
-		node3.val = 4;
-		Node node4 = new Node();
-		node4.val = 5;
-		Node node5 = new Node();
-		node5.val = 6;
-		List<Node> rootChildren = new ArrayList<Node>();
-		rootChildren.add(node1);
-		rootChildren.add(node2);
-		rootChildren.add(node3);
-		List<Node> children3List = new ArrayList<>();
-		children3List.add(node4);
-		children3List.add(node5);
-		root.children = rootChildren;
-		node3.children = children3List;
-		MaximumDepthOfNaryTree tree = new MaximumDepthOfNaryTree();
-		System.out.println(tree.maxDepth(root));
-	}
+
 
 }
