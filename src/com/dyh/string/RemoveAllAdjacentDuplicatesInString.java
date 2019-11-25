@@ -2,6 +2,7 @@ package com.dyh.string;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * Remove All Adjacent Duplicates In String:给出由小写字母组成的字符串 S，重复项删除操作会选择两个相邻且相同的字母，并删除它们。
@@ -34,6 +35,23 @@ public class RemoveAllAdjacentDuplicatesInString {
         return S;
     }
 	
+	public static String removeDuplicates2(String S) {
+		char[] chars = S.toCharArray();
+		Stack<Character> stack = new Stack<>();
+		for(int i = 0; i < S.length(); i++) {
+			if(stack.isEmpty() || chars[i] != stack.peek()) {
+				stack.push(chars[i]);
+			}else {
+				stack.pop();
+			}
+		}
+		StringBuilder sBuilder = new StringBuilder();
+		for(Character c: stack) {
+			sBuilder.append(c);
+		}
+		return sBuilder.toString();
+    }
+	
 	public static int isDuplicates(String s) {
 		int index = -1;
 		for(int i = 0; i < s.length(); i++) {
@@ -47,6 +65,7 @@ public class RemoveAllAdjacentDuplicatesInString {
 		}
 		return index;
 	}
+	
 	
 
 	public static void main(String[] args) {
